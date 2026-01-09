@@ -1,0 +1,158 @@
+.main-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.les {
+    margin: 0;
+}
+.khung-list-lesson {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+} a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #090d15;
+}
+.section-title a{
+    font-size: 16px;
+    color: #6991e8;
+}
+.section-title {
+    margin-bottom: 30px;
+}
+.newest {
+    font-size: 18px;
+    font-weight: 700;
+    color: #b7bbc6;
+}
+.khung-trai {
+    background: #f9f9f9;
+    border: 1px solid #e1e4e8;
+    margin-right: 20px;
+}
+
+.bai-tren {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding-left: 15px;
+}
+
+/*noi-dung-tren*/
+.noi-dung {
+    display: flex;
+    flex-direction: column;
+}
+
+.noi-dung-tren {
+    color: #111827;
+}
+
+.noi-dung-duoi {
+    margin-top: 10px;
+    display: flex;
+}
+
+.card-body {
+    margin: 0 10px;
+    padding-bottom: 15px;
+}
+
+.bai-duoi .card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+.read-more {
+    color: #6991e8;
+    font-size: 16px;
+}
+/* KHUNG BÀI DƯỚI */
+.bai-duoi {
+    margin-top: 32px;
+}
+
+/* GRID 2 CỘT */
+.bai-duoi .post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* CARD */
+.bai-duoi .card {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.bai-duoi .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ẢNH */
+.bai-duoi .card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.bai-duoi .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BADGE */
+.bai-duoi .badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.badge.lesson {
+    background: #101011;
+    font-size: 24px;
+}
+
+.bai-duoi .card-body {
+    padding: 16px;
+}
+
+.bai-duoi .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.bai-duoi .card-title a {
+    color: #111827;
+    text-decoration: none;
+}
+
+.bai-duoi .card-title a:hover {
+    color: #4f46e5;
+}
+
+.line-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.khung-phai {
+    background: #f9f9f9;
+    border: 5px solid #e1e4e8;
+}

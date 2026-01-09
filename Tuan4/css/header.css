@@ -1,0 +1,83 @@
+
+/* HEADER */
+.dau-trang {
+    background: #f6f9fc;
+    border-bottom: 1px solid #e3e7ee;
+}
+.khung-dau-trang {
+    max-width: 1220px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* LOGO */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.header-logo a{
+    text-decoration: none;
+}
+.logo{
+    height: 16px;
+}
+.logo-text {
+   font-weight: 700;
+    font-size: 16px;
+}
+
+.logo-trang img {
+    height: 16px;
+}
+
+/* Ô TÌM KIẾM */
+.o-tim-kiem {
+    flex: 1;
+    max-width: 420px;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #dfe3ea;
+}
+
+.o-tim-kiem input {
+    flex: 1;
+    border: none;
+    padding: 8px 14px;
+    outline: none;
+    font-size: 14px;
+}
+
+.o-tim-kiem button {
+    border: none;
+    background: none;
+    padding: 0 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* MENU */
+.menu-chinh {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-chinh a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.menu-chinh a:hover {
+    color: #000;
+}
+
+.menu-chinh .nut-dang-nhap {
+    font-weight: 600;
+}

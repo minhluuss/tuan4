@@ -1,0 +1,163 @@
+.main-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f0eaea;
+    justify-content: center;
+}
+
+.main-container2 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.section-title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.title {
+    font-size: 32px;
+    color: #089f1a;
+}
+
+.title1 {
+    font-size: 18px;
+    color: #090909;
+}
+
+.title2 {
+    font-size: 16px;
+    color: #746f6f;
+}
+
+.can-giua {
+    max-width: 1120px;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+/* Lưới hiển thị (Grid System) */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 Cột */
+    gap: 30px;
+    /* Khoảng cách giữa các card */
+}
+
+/* Giao diện 1 cái Card */
+.card {
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Để ảnh không bị tràn ra ngoài bo góc */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Nhấc nhẹ lên khi di chuột */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh trong card */
+.card-img {
+    height: 120px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Nhãn (Badge) góc trên ảnh */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.badge.lesson {
+    background-color: #007bff;
+}
+
+/* Màu xanh cho bài học */
+.badge.plugin {
+    background-color: #28a745;
+}
+
+/* Màu lá cây cho Plugin */
+
+/* Nội dung chữ bên dưới */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card-title a:hover {
+    color: #007bff;
+}
+
+.card-excerpt {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    height: 45px;
+    /* Giới hạn chiều cao dòng chữ */
+    overflow: hidden;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ho-tro {
+    margin-top: 50px;
+    height: 180px;
+    background-color: #e9f0f8;
+    display: flex;
+    align-items: center;
+
+}
+
+.can-giua2 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive: Trên điện thoại chỉ hiện 1 cột */
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}

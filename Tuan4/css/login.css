@@ -1,0 +1,96 @@
+/* RESET NHẸ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION LOGIN */
+.login {
+    min-height: calc(100vh - 160px); /* header + footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+
+    padding-top: 60px;   /* khoảng cách dưới header */
+    padding-bottom: 140px; /* khoảng cách tới footer */
+}
+
+/* TIÊU ĐỀ */
+.tieu-de-login {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.tieu-de-login h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.tieu-de-login p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* FORM */
+.thong-tin {
+    width: 100%;
+    max-width: 340px;
+}
+
+/* INPUT */
+.input-login {
+    margin-bottom: 18px;
+}
+
+.input-login input {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 13px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.input-login input:focus {
+    outline: none;
+    border-color: #0a58ca;
+}
+
+/* BUTTON */
+.button-login button {
+    width: 100%;
+    padding: 11px;
+
+    background: #0a58ca;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-login button:hover {
+    background: #084298;
+}
+
+/* FORGOT PASSWORD */
+.forgot-password {
+    margin-top: 28px;
+}
+
+.forgot-password a {
+    font-size: 12.5px;
+    color: #0a58ca;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
