@@ -106,6 +106,84 @@ require '../includes/header.php'; // Gọi thanh menu
         </div>
         <div class="khung-phai">
 
+            <div class="phai-card must-have">
+                <img src="../images/background-ban-hoc-1.jpg" alt="">
+                <h4>3 <strong>WORDPRESS</strong> PLUGINS EVERY BLOG</h4>
+                <h2>"must have"</h2>
+                <a href="" class="btn">Learn Now</a>
+            </div>
+
+            <div class="phai-card free-membership">
+                <h4>FREE MEMBERSHIP</h4>
+                <h2>Private Vault Of<br>Video Courses</h2>
+                <p>Grow and Prosper Using<br>WordPress The Smart Way!</p>
+                <a href="" class="btn">Join Our Academy</a>
+                <img src="../images/background-ban-hoc-2.jpg" alt="">
+            </div>
+
+            <div class="phai-card resources">
+                <h2>RESOURCES</h2>
+                <p>Recommended WordPress Resources, Services, and Tools</p>
+                <a href="" class="btn">Browse Resources</a>
+            </div>
+
+            <div class="phai-card featured-plugin">
+                <h2>FEATURED PLUGINS</h2>
+
+                <?php
+                $sql = "SELECT * FROM posts 
+            WHERE type = 'plugin' 
+            ORDER BY id DESC 
+            LIMIT 2";
+                $result = $conn->query($sql);
+
+                if ($result && $result->num_rows > 0) {
+                    $plugins = [];
+                    while ($row = $result->fetch_assoc()) {
+                        $plugins[] = $row;
+                    }
+                    ?>
+                    <!-- MÔ TẢ -->
+                    <div class="featured-plugin-desc">
+                        <h4>
+                            <?= strip_tags($plugins[0]['title']); ?>
+                        </h4>
+                        <p>
+                            <?= strip_tags($plugins[0]['excerpt'] ?? $plugins[0]['content']); ?>
+                        </p>
+                        <a href="#" class="learn-more">Learn more</a>
+                    </div>
+
+                    <!-- ẢNH -->
+                    <div class="featured-plugin-images">
+                        <?php foreach ($plugins as $plugin): ?>
+                            <?php if (!empty($plugin['image'])): ?>
+                                <div class="plugin-img-box">
+                                    <img src="../uploads/<?= $plugin['image']; ?>" alt="">
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </div>
+
+                <?php } else { ?>
+                    <p>Chưa có plugin nào.</p>
+                <?php } ?>
+
+                <a href="#" class="btn">Browse all plugins</a>
+            </div>
+
+
+
+            <div class="phai-card popular-lessons">
+                <h2>POPULAR LESSONS</h2>
+                <ul>
+                    <li><a href="">Top Ten Ways To Make Money From Wordpress</a></li>
+                    <li><a href="">20 Must Have Wordpress Plugins For Marketing</a></li>
+                    <li><a href="">Newest Trending Wordpress Themes For 2022</a></li>
+                    <li><a href="">5 Best Email Marketing Your Wordpress Site</a></li>
+                    <li><a href="">Best Social Media Strategies For Your Wordpress Site</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

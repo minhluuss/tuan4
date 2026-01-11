@@ -116,8 +116,28 @@ require '../includes/header.php'; // Gọi thanh menu
                 <a href="list_lesson.php" class="nut-xem-them">Browse all lessons</a>
             </div>
         </div>
-        <div class="khung-bai-nb-phai">
-            <h2>right row</h2>
+        <div class="khung-phai">
+
+            <div class="phai-card must-have">
+                <img src="../images/background-ban-hoc-1.jpg" alt="">
+                <h4>3 <strong>WORDPRESS</strong> PLUGINS EVERY BLOG</h4>
+                <h2>"must have"</h2>
+                <a href="" class="btn">Learn Now</a>
+            </div>
+
+            <div class="phai-card free-membership">
+                <h4>FREE MEMBERSHIP</h4>
+                <h2>Private Vault Of<br>Video Courses</h2>
+                <p>Grow and Prosper Using<br>WordPress The Smart Way!</p>
+                <a href="" class="btn">Join Our Academy</a>
+                <img src="../images/background-ban-hoc-2.jpg" alt="">
+            </div>
+
+            <div class="phai-card resources">
+                <h2>RESOURCES</h2>
+                <p>Recommended WordPress Resources, Services, and Tools</p>
+                <a href="" class="btn">Browse Resources</a>
+            </div>
         </div>
     </div>
 </section>
