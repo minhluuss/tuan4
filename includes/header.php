@@ -29,8 +29,12 @@
             </div>
 
             <!-- TÌM KIẾM -->
-            <form class="o-tim-kiem" action="search.html" method="get">
-                <input type="text" name="q" placeholder="Tìm plugin, bài học...">
+            <form class="o-tim-kiem" action="search.php" method="GET">
+
+                <input type="text" name="keyword" placeholder="Tìm plugin, bài học..."
+                    value="<?php if (isset($_GET['keyword']))
+                        echo htmlspecialchars($_GET['keyword']); ?>">
+
                 <button type="submit">🔍</button>
             </form>
 

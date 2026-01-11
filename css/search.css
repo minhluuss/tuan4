@@ -1,0 +1,101 @@
+/* file: css/style.css */
+
+/* --- KHUNG BAO NGOÀI --- */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 60vh;
+    /* Để chân trang không bị đẩy lên cao quá nếu ít bài */
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* --- LƯỚI BÀI VIẾT (GRID SYSTEM) --- */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Chia 3 cột đều nhau */
+    gap: 30px;
+    /* Khoảng cách giữa các ô */
+}
+
+/* --- GIAO DIỆN 1 CÁI CARD --- */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* Để nội dung canh đều dọc */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Hiệu ứng nhấc lên */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    height: 120px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    margin: 0 0 10px 0;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Chỉ hiện tối đa 2 dòng tiêu đề */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-title a:hover {
+    color: #007bff;
+}
+
+.card-excerpt {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    /* Cắt chữ đẹp */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+        /* Về 1 cột trên điện thoại */
+    }
+}
